@@ -73,3 +73,8 @@ body {
 .footer .fab:hover {
     color: var(--blue);
 }
+
+.small-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+}
