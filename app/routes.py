@@ -5,15 +5,21 @@ projs = [
     {
         "id": "project1", "title": "Project 1",
         "description": "Description for project 1.",
-        "image": "static/images/1.jpeg"},
+        "image": "static/images/1.jpeg",
+        "link": "dummy/link",
+        },
     {
         "id": "project2", "title": "Project 2",
         "description": "Description for project 2.",
-        "image": "static/images/2.jpeg"},
+        "image": "static/images/2.jpeg",
+        "link": "dummy/link",
+        },
     {
         "id": "project3", "title": "Project 3",
         "description": "Description for project 3.",
-        "image": "static/images/3.jpeg"},
+        "image": "static/images/3.jpeg",
+        "link": "dummy/link",
+        },
 ]
 
 @app.route('/')
@@ -28,7 +34,7 @@ def description():
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html', title='Projects')
+    return render_template('projects.html', title='Projects', projects=projs)
 
 @app.route('/others')
 def others():
