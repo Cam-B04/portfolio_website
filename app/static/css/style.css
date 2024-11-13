@@ -1,0 +1,75 @@
+/* Color Palette */
+:root {
+/* CSS HEX */
+    --black: #000501ff;
+    --back_color: #ffffffff;
+    --light_rose: #f3b9baff;
+    --blue: #648de5ff;
+}
+
+/* General Styles */
+body {
+    background-color: var(--back_color);
+    color: var(--black);
+}
+
+.container {
+    background-color: var(--back_color);
+    color: #343a40;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.jumbotron {
+    background-color: var(--back_color);
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--maya-blue);
+}
+
+.navbar {
+    background-color: var(--back);
+    border-radius: 5px;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--black) !important;
+}
+
+.nav-link:hover {
+    color: var(--blue) !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--light_rose);
+    border-color: var(--light_rose);
+}
+
+.footer {
+    background-color: var(--back_color); /* Updated background color */
+    padding: 1rem 0;
+}
+
+.footer .text-muted {
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.footer .fab {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.footer .fab:hover {
+    color: var(--blue);
+}
