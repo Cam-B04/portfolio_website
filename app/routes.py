@@ -3,19 +3,26 @@ from app import app
 
 projs = [
     {
-        "id": "project1", "title": "Project 1",
-        "description": "Description for project 1.",
-        "image": "static/images/1.jpeg",
-        "link": "dummy/link",
+        "id": "project1",
+        "title": "Producing realistic climate data using generative AI.",
+        "description": "Paper produced during my PhD, the goal was "
+        "to produce realistic climate data using generative AI. The paper "
+        "was published in the Nonlinear Processes in Geophysics journal and underlined "
+        "interesting properties for to help reduce instabilities in Meteorological "
+        "simulators.",
+        "image": "static/images/img_project_GAN_climat.jpeg",
+        "link": "https://github.com/Cam-B04/Producing-realistic-climate-data-with-GANs",
         },
     {
-        "id": "project2", "title": "Project 2",
+        "id": "project2",
+        "title": "Project 2",
         "description": "Description for project 2.",
         "image": "static/images/2.jpeg",
         "link": "dummy/link",
         },
     {
-        "id": "project3", "title": "Project 3",
+        "id": "project3",
+        "title": "Project 3",
         "description": "Description for project 3.",
         "image": "static/images/3.jpeg",
         "link": "dummy/link",
