@@ -15,19 +15,13 @@ projs = [
         },
     {
         "id": "project2",
-        "title": "Project 2",
-        "description": "Description for project 2.",
-        "image": "static/images/2.jpeg",
-        "link": "dummy/link",
-        },
-    {
-        "id": "project3",
-        "title": "Project 3",
-        "description": "Description for project 3.",
-        "image": "static/images/3.jpeg",
-        "link": "dummy/link",
+        "title": "Data visualisation of Bixi bike stations in Montreal.",
+        "description": "This project aims at visualising the Bixi bike stations in Montreal.",
+        "image": "static/images/img_project_bixi.png",
+        "link": "https://github.com/Cam-B04/bixi_open_data",
         },
 ]
+
 
 @app.route('/')
 @app.route('/home')

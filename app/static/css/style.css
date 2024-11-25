@@ -146,7 +146,7 @@ p.dark-mode {
     background-color: #1e1e1e;
 }
 
-p.dark-mode, h1.dark-mode, h2.dark-mode, h3.dark-mode, h4.dark-mode, h5.dark-mode, h6.dark-mode, i.footer.dark-mode {
+p.dark-mode, h1.dark-mode, h2.dark-mode, h3.dark-mode, h4.dark-mode, h5.dark-mode, h6.dark-mode, i.footer.dark-mode a.dark-mode {
     color: #ffffff;
 }
 
