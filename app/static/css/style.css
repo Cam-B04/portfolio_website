@@ -11,6 +11,7 @@
 body {
     background-color: var(--back_color);
     color: var(--black);
+    margin: 3em;
 }
 
 body.dark-mode {
@@ -33,6 +34,9 @@ p.dark-mode {
     border-radius: 5px;
 }
 
+.row {
+    margin: 0.5cm;
+}
 .container.dark-mode {
     background-color: #1e1e1e;
     color: #ffffff;
@@ -43,6 +47,7 @@ p.dark-mode {
     padding: 2rem 1rem;
     border-radius: 0.5rem;
     color: var(--maya-blue);
+    margin: 1cm;
 }
 
 .jumbotron.dark-mode {
