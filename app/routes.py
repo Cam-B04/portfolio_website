@@ -29,17 +29,21 @@ def home():
     last_projects = projs[-3:]
     return render_template('home.html', title='Home', projects=last_projects)
 
+
 @app.route('/description')
 def description():
     return render_template('description.html', title='Description')
+
 
 @app.route('/projects')
 def projects():
     return render_template('projects.html', title='Projects', projects=projs)
 
+
 @app.route('/others')
 def others():
     return render_template('others.html', title='Others')
+
 
 @app.route('/contact')
 def contact():
