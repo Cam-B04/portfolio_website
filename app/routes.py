@@ -12,6 +12,7 @@ projs = [
         "simulators.",
         "image": "static/images/img_project_GAN_climat.jpeg",
         "link": "https://github.com/Cam-B04/Producing-realistic-climate-data-with-GANs",
+        "associated_paper_link": ["https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=VLc4FeUAAAAJ&citation_for_view=VLc4FeUAAAAJ:foquWX3nUaYC"],
         },
     {
         "id": "project2",

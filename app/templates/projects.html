@@ -18,6 +18,10 @@
         <h5>{{ project.title }}</h5>
         <p>{{ project.description }}</p>
         <a href="{{ project.link }}" class="btn btn-primary">View Project</a>
+        <!-- if projs.associated_paper_link not empty show "article" button -->
+        {% if project.associated_paper_link is defined%}
+        <a href="{{ project.associated_paper_link }}" class="btn btn-secondary">Associated Article</a>
+        {% endif %} 
     </div>
     </div>
     {% endfor %}
