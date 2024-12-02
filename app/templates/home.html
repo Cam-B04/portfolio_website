@@ -27,6 +27,34 @@
             transformative outcomes.
             
             Let’s connect and create something extraordinary together!</p>
+    <div id="projectCarousel" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            {% for project in projects %}
+            <div class="carousel-item {% if loop.first %}active{% endif %} data-bs-interval='2'">
+                <div class="card">
+                    <a href="{{ project.link }}">
+                    <img src="{{ project.image }}" class="card-img-top d-block w-100" alt="{{ project.title }}">
+                    </a>
+                    <div class="card-body">
+                        <h5>{{ project.title }}</h5>
+                        <p>{{ project.description }}</p>
+                        <a href="{{ project.link }}" class="btn btn-primary">View Project</a>
+                        {% if project.associated_paper_link is defined%}
+                        <a href="{{ project.associated_paper_link }}" class="btn btn-secondary">Associated Article</a>
+                        {% endif %} 
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
     <div class="row">
         <div class="col-md-6">
@@ -53,37 +81,6 @@
                 AI solutions to real-world challenges</strong>, particularly in image analysis, 
                 time series, and data-driven decision-making.</p>
         </div>
-    <hr class="my-4">
-    <p>Explore my projects and learn more about my work.</p>
-    <a class="btn btn-primary btn-lg" href="/projects" role="button">View Projects</a>
-    </div>
-    <div id="projectCarousel" class="carousel slide " data-bs-ride="carousel">
-        <div class="carousel-inner">
-            {% for project in projects %}
-            <div class="carousel-item {% if loop.first %}active{% endif %}">
-                <div class="card">
-                    <a href="{{ project.link }}">
-                    <img src="{{ project.image }}" class="card-img-top d-block w-100 " alt="{{ project.title }}">
-                    </a>
-                    <div class="card-body">
-                        <h5>{{ project.title }}</h5>
-                        <p>{{ project.description }}</p>
-                        <a href="{{ project.link }}" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
     {% endblock %}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
